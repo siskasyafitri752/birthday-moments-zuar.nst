@@ -1,0 +1,184 @@
+/* =====================================
+   ANIMATION CSS - BIRTHDAY MOMENTS
+===================================== */
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* FADE IN SAAT HALAMAN DIBUKA */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* HERO ANIMATION */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: slideUp 1s ease forwards;
+}
+
+/* JUDUL HERO */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    animation: fadeDown 1s ease forwards;
+}
+
+/* GAMBAR HERO */
+.hero-image {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* SCROLL REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* GALERI HOVER */
+.gallery-item {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+}
+
+/* GAMBAR GALERI */
+.gallery-image {
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+/* TOMBOL */
+button {
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* TOMBOL MUSIK SAAT AKTIF */
+.music-button.playing .music-icon {
+    animation: musicPulse 1s infinite ease-in-out;
+}
+
+@keyframes musicPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+/* ANIMASI SURAT */
+#letterContent {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(15px);
+    transition:
+        opacity 0.6s ease,
+        max-height 0.8s ease,
+        transform 0.6s ease;
+}
+
+#letterContent.show {
+    opacity: 1;
+    max-height: 1000px;
+    transform: translateY(0);
+}
+
+/* LIGHTBOX GALERI */
+.lightbox {
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-content {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.lightbox.active .lightbox-content {
+    transform: scale(1);
+}
+
+/* HEADER SAAT SCROLL */
+.header {
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+    box-shadow: 0 5px 20px rgba(60, 40, 25, 0.08);
+}
+
+/* MENGHORMATI PENGATURAN REDUCE MOTION */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}

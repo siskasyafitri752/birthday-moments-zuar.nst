@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A special birthday website made for Zulham Aril Nasution.">
+
+    <title>Birthday Moments | Zulham</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <a href="#home" class="logo">
+                Birthday <span>Moments.</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#message">Message</a>
+                <a href="#memories">Memories</a>
+                <a href="#wishes">Wishes</a>
+            </nav>
+
+            <button class="music-button" id="musicToggle" type="button">
+                <span class="music-icon">♫</span>
+                <span id="musicLabel">Play Music</span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero container" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    A SPECIAL DAY FOR SOMEONE SPECIAL
+                </p>
+
+                <h1 class="hero-title">
+                    Happy <br>
+                    <span>Birthday.</span>
+                </h1>
+
+                <h2 class="birthday-name">
+                    Zulham Aril Nasution
+                </h2>
+
+                <p class="hero-description">
+                    A little celebration for someone who deserves
+                    all the beautiful things in life.
+                </p>
+
+                <a href="#message" class="primary-button">
+                    Discover Your Surprise ↗
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="birthday-cake.jpeg"
+                    alt="A beautiful birthday cake"
+                >
+            </div>
+
+        </section>
+
+
+        <!-- MESSAGE -->
+        <section class="message-section" id="message">
+
+            <div class="container">
+
+                <h2 class="section-heading">
+                    A Little <span>Message</span>
+                </h2>
+
+                <p class="section-description">
+                    A special message prepared just for you.
+                </p>
+
+                <div class="message-card">
+
+                    <p class="message-highlight">
+                        Today is all about you.
+                    </p>
+
+                    <p>
+                        Hari ini adalah hari spesial untuk seseorang
+                        yang sedang memulai lembaran baru dalam hidupnya.
+                    </p>
+
+                    <p>
+                        Semoga setiap langkah yang kamu ambil
+                        selalu membawa cerita baik dan kebahagiaan.
+                    </p>
+
+                    <button
+                        class="secondary-button"
+                        id="openLetter"
+                        type="button"
+                        aria-expanded="false"
+                    >
+                        Open Your Letter
+                    </button>
+
+                    <div id="letterContent">
+
+                        <p>
+                            <strong>Dear Zulham,</strong>
+                        </p>
+
+                        <p>
+                            Happy birthday!
+
+                            Semoga di usia yang baru ini,
+                            kamu selalu diberikan kesehatan,
+                            kebahagiaan, dan kemudahan dalam
+                            setiap hal yang sedang kamu perjuangkan.
+
+                            Semoga semua impian yang kamu simpan
+                            perlahan bisa menjadi kenyataan.
+
+                            Jangan terlalu keras pada diri sendiri.
+                            Nikmati setiap proses, hargai setiap
+                            pencapaian, dan tetap jadi diri sendiri.
+                        </p>
+
+                        <p class="message-highlight">
+                            Wishing you nothing but the best. ♡
+                        </p>
+
+                        <p>With warm wishes, ♡</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORIES -->
+        <section class="gallery-section" id="memories">
+
+            <div class="container">
+
+                <h2 class="section-heading">
+                    Little <span>Moments</span>
+                </h2>
+
+                <p class="section-description">
+                    Sometimes, the simplest things make
+                    the most beautiful memories.
+                </p>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">
+                        <img
+                            src="flowers.jpeg"
+                            alt="Beautiful flowers"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <p>Little things, big happiness.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-item">
+                        <img
+                            src="sunset.jpeg"
+                            alt="Beautiful sunset"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <p>Chasing beautiful days.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-item">
+                        <img
+                            src="coffee.jpeg"
+                            alt="A cup of coffee"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <p>Slow days, warm moments.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-item">
+                        <img
+                            src="scrapbook.jpeg"
+                            alt="Aesthetic scrapbook"
+                            class="gallery-image"
+                        >
+
+                        <div class="gallery-caption">
+                            <p>Something worth remembering.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WISHES -->
+        <section class="wishes-section" id="wishes">
+
+            <div class="container">
+
+                <h2 class="section-heading">
+                    Wishes <span>For You</span>
+                </h2>
+
+                <p class="section-description">
+                    Here's a little list of things I wish for you.
+                </p>
+
+                <div class="wishes-grid">
+
+                    <div class="wish-card">
+                        <div class="wish-icon">♡</div>
+                        <h3>Good Health</h3>
+                        <p>Semoga selalu sehat dan bahagia.</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-icon">✧</div>
+                        <h3>Beautiful Dreams</h3>
+                        <p>Semoga semua impianmu tercapai.</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-icon">✿</div>
+                        <h3>Good People</h3>
+                        <p>Semoga selalu dikelilingi orang baik.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLOSING -->
+        <section class="closing-section" id="closing">
+
+            <div class="closing-content">
+
+                <p class="closing-subtitle">
+                    THIS PAGE IS MADE JUST FOR YOU
+                </p>
+
+                <h2 class="closing-title">
+                    One More Year, <br>
+                    One More Beautiful Story.
+                </h2>
+
+                <p class="closing-description">
+                    Thank you for being you.
+                    May your days always be filled with happiness.
+                </p>
+
+                <br>
+
+                <a href="#home" class="secondary-button">
+                    Back to the Beginning ↑
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>Birthday Moments.</p>
+
+        <p>A little page, made with warm wishes.</p>
+
+        <p>
+            10 Desember <span id="currentYear">2026</span>
+            Birthday Zuar.nst
+        </p>
+
+    </footer>
+
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="birthdayMusic" loop preload="auto">
+        <source src="birthda.mpeg" type="audio/mpeg">
+    </audio>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="music.js"></script>
+    <script src="gallery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
